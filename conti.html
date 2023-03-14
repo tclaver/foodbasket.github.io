@@ -2,82 +2,97 @@
 <html>
 <head>
 	<title>Food Basket - Continental Restaurants</title>
-	<!-- Add Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-	<div class="container mt-4">
-		<h1>Continental Restaurants</h1>
-		
-		<!-- Add Cards -->
-		<div class="card-deck">
-			<div class="card">
-				<img src="images/lavilla.jpg" class="card-img-top" alt="La Villa Boutique Hotel Restaurant">
-				<div class="card-body">
-				<a href="https://www.lavillaghana.com/"><h5 class="card-title">La Villa Boutique Hotel Restaurant</h5></a>	
-					
-                    <p>La Villa Boutique hotel is an oasis of calm in the hassle and bustling city of Osu,Accra and uniquely designed to suit the taste of the the business traveller and the romantic adventurer in search of a home away from home.</p>
-                    <br>
-                    <br>
-                    <p class="card-text">French cuisine</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/noblehouse.jpg" class="card-img-top" alt="Noble House Chinese Restaurant">
-				<div class="card-body">
-					<a href="https://www.noblehouseghana.com/"><h5 class="card-title">Noble House Chinese Restaurant</h5></a> 
-
-                    <p>The Noble House Chinese Indian Restaurant in Ghana offers a variety of Chinese and Indian dishes for both dine-in and delivery [1]. Located in Accra and Kumasi, the restaurant has received positive reviews for its food, service and value. It is advisable to make reservations before dining in at the restaurant, especially during peak hours. The restaurant also offers delivery services for those who prefer to enjoy their food at home or work.</p>
-                    <br>
-                    <br>
-					<p class="card-text">Chinese cuisine</p>
-                    
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/rocomamas.jpg" class="card-img-top" alt="RocoMamas">
-				<div class="card-body">
-					<a href="https://www.rocomamas.com/gh/home/?utm_source=google_maps&utm_medium=website_link&utm_campaign=SP&utm_content=SP"><h5 class="card-title">RocoMamas</h5></a>
-                    <p>RocoMamas is a fast-casual restaurant chain in Ghana that serves smash burgers, ribs, and wings </p>
-                    <br>
-                    <br>
-					<p class="card-text">American cuisine</p>
-                    
-				</div>
-			</div>
+    <!-- nav bar -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="index.html">Food Basket</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="learnmore.html">About</a>
+				</li>
+			</ul>
 		</div>
-		<div class="card-deck mt-4">
-			<div class="card">
-				<img src="images/jofel.jpg" class="card-img-top" alt="Oasis Restaurant">
-				<div class="card-body">
-					<a href="https://jofelcateringservices.com/"><h5 class="card-title">Jofel Catering Services</h5> </a>
+	</nav>
+    <!-- nav bar -->
 
-                    <p>Jofel Catering Services is a catering company based in Ghana that offers food delivery, catering, and event management services. The company has a website where customers can view their menu, place orders, and make reservations for catering services for different types of events, including weddings, corporate events, and life celebrations.</p>
-                    <br>
-                    <br>
-					<p class="card-text">African cuisine</p>
-                    
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/goldentulip.jpg" class="card-img-top" alt="Golden Tulip Restaurant">
-				<div class="card-body">
-					<a href="https://goldentulipkumasicity.com-hotel.website/"><h5 class="card-title">Golden Tulip Restaurant</h5></a>
-                    Golden Tulip refers to a hotel chain that offers 4-star accommodations in various locations around the world. The hotels provide a range of amenities, including entertainment, comfortable rooms, and free Wi-Fi. Has branches in most regions of Ghana.
-                    <br>
-                    <br>
-					<p class="card-text">Continental cuisine</p>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+    <div class="container my-5">
+        <h2 class="text-center">Continental Restaurants</h2>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/noblehouse.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Noble House</h5>
+                <p class="card-text">The Noble House Chinese Indian Restaurant in Ghana offers a variety of Chinese and Indian dishes for both dine-in and delivery [1]. Located in Accra and Kumasi, the restaurant has received positive reviews for its food, service and value. It is advisable to make reservations before dining in at the restaurant, especially during peak hours. The restaurant also offers delivery services for those who prefer to enjoy their food at home or work.</p>
+                <a href="https://www.noblehouseghana.com/" class="btn btn-primary">View Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/rocomamas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RococMamas</h5>
+                <p  class="card-text">RocoMamas is a fast-casual restaurant chain in Ghana that serves smash burgers, ribs, and wings</p>
+                <a href="https://www.rocomamas.com/gh/home/?utm_source=google_maps&utm_medium=website_link&utm_campaign=SP&utm_content=SP" class="btn btn-primary">Visit Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/jofel.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jofel Catering Services</h5>
+                <p class="card-text">Jofel Catering Services is a catering company based in Ghana that offers food delivery, catering, and event management services. The company has a website where customers can view their menu, place orders, and make reservations for catering services for different types of events, including weddings, corporate events, and life celebrations.</p>
+                <a href="https://jofelcateringservices.com/" class="btn btn-primary">View Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container my-5">
+       
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/lavilla.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">La Villa Boutique Hotel Restaurant</h5>
+                <p class="card-text">La Villa Boutique hotel is an oasis of calm in the hassle and bustling city of Osu,Accra and uniquely designed to suit the taste of the the business traveller and the romantic adventurer in search of a home away from home.</p>
+                <a href="https://www.lavillaghana.com/" class="btn btn-primary">Visit Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="images/goldentulip.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Golden Tulip</h5>
+                <p  class="card-text">  Golden Tulip refers to a hotel chain that offers 4-star accommodations in various locations around the world. The hotels provide a range of amenities, including entertainment, comfortable rooms, and free Wi-Fi. Has branches in most regions of Ghana.</p>
+                <a href="https://goldentulipkumasicity.com-hotel.website/" class="btn btn-primary">Visit Now</a>
+              </div>
+            </div>
+          </div>
+          
+         </div>
+         </div>
+         
+  
 
-	<!-- Add Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-</html>
+  </body>
+  </html>

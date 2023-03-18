@@ -37,7 +37,7 @@
                     <a class="nav-link" href="admin.html">Admin</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+<!--             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <div class="d-flex justify-content-end">
                     <button type="button"  class="btn btn-secondary mr-2">Search</button>
@@ -45,7 +45,13 @@
                    
                   </div>
                   
-            </form>
+            </form> -->
+             <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="performSearch()">Search</button>
+              </form>
+              
+              <div id="search-results"></div>
             
             
 
@@ -212,6 +218,25 @@
     crossorigin="anonymous"></script>
     
 
+<script>
+                function performSearch() {
+                  // Get the search query from the input field
+                  var query = document.getElementById("search-input").value;
+              
+                  // Perform a search using the query and display the results
+                  var results = searchDatabase(query);
+                  displayResults(results);
+                }
+              
+                function searchDatabase(query) {
+                  // TODO: Implement database search using query
+                  // Return an array of search results
+                }
+              
+                function displayResults(results) {
+                  // TODO: Implement code to display search results in the search-results div
+                }
+              </script>
   
 </body>
 <!-- Footer -->
